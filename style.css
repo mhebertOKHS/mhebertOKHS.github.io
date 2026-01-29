@@ -1,6 +1,6 @@
 body {
-    background: rgb(125, 85, 200);
-    color: rgb(45, 45, 45);
+    background:rgb(8, 6, 8);
+     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: Arial, sans-serif;
 }
@@ -17,6 +17,10 @@ nav {
     display: flex;
     padding: 10px;
     margin-bottom: 20px;
+    border-style: groove;
+    border-width: 15px;
+    border-color:#9000ff
+    
 }
 
 h1 {
@@ -46,9 +50,12 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(239, 238, 234);
+    background: rgb(213, 197, 76);
     display: flex;
     margin-top: 20px;
+    border-style: groove;
+    border-width: 15px;
+    border-color:#9000ff
 }
 
 .sidebar {
@@ -67,7 +74,7 @@ main {
 
 /* interests section styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px rgb(0,0,0) ridge;
     padding: 8px;
     margin-top: 20px;
 }
@@ -94,12 +101,12 @@ h2, h3 {
 }
 
 #portfolio li:hover {
-  background: #eee;
+  background: #9000ff;
 }
 
 #portfolio a {
   text-decoration: none;
-  color: #000000;
+  color: #111010;
 }
 /* responsive web design */
 @media screen and (min-width: 120px) and (max-width: 1080px) {
