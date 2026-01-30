@@ -1,6 +1,6 @@
 body {
-    background:rgb(8, 6, 8);
-     color: rgb(45, 45, 45);
+    background-color:black;
+    color:black
     padding: 10px;
     font-family: Arial, sans-serif;
 }
@@ -12,7 +12,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(213, 197, 76);
+    background: rgb(248, 244, 4);
     margin: 0 auto;
     display: flex;
     padding: 10px;
@@ -20,6 +20,7 @@ nav {
     border-style: groove;
     border-width: 15px;
     border-color:#9000ff
+    
     
 }
 
@@ -50,7 +51,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(213, 197, 76);
+    background: rgb(238, 244, 4);
     display: flex;
     margin-top: 20px;
     border-style: groove;
