@@ -54,7 +54,7 @@ $(function () {
 
     // TODO 3 - Create Collectables
     createCollectable("warrior", 375, 200);
-    createCollectable("warrior ", 1025, 150);
+    createCollectable("warrior", 1025, 150);
     createCollectable("warrior", 1350, 200, 0);
     createCollectable("warrior", 1025, 400);
     createCollectable("warrior", 300, 350);
@@ -70,8 +70,8 @@ $(function () {
     
     // TODO 4 - Create Cannons
     createCannon("right", 200, 1600);
-    createCannon("right", 375,1300);
-    createCannon("right", 800, 950)
+    createCannon("right", 375, 1300);
+    createCannon("right", 800, 950);
 
 
     
