@@ -31,20 +31,21 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
-    createPlatform(0, 250,  150, 15);
-    createPlatform(200, 150, 15, 100);
-    createPlatform(340, 250, 150, 15);
-    createPlatform(700, 250, 50, 12);
-    createPlatform(950, 250, 50, 10);
-    createPlatform(1250, 250 , 50, 12);
-    createPlatform(1250, 500, 300, 10);
-    createPlatform(950, 450,  75, 8);
-    createPlatform(700, 425,  50 , 10);
-    createPlatform(400, 500, 75, 8 );
-    createPlatform(175,  500, 300, 10);
-    createPlatform(175, 500, 5 , 40);
-    createPlatform(125,625, 75, 12 );
-    createPlatform(650, 650, 30, 10);
+    createPlatform(0, 250,  150, 15, "white" );
+    createPlatform(200, 150, 15, 100, "white");
+    createPlatform(340, 250, 150, 15, "white" );
+    createPlatform(700, 250, 50, 12, "white" );
+    createPlatform(950, 250, 50, 10, "white" );
+    createPlatform(1250, 250 , 50, 12, "white");
+    createPlatform(1250, 500, 300, 10, "white");
+    createPlatform(950, 450,  75, 8, "white");
+    createPlatform(700, 425,  50 , 10, "white");
+    createPlatform(400, 500, 75, 8, "white" );
+    createPlatform(175,  500, 300, 10, "white");
+    createPlatform(175, 500, 5 , 40, "white");
+    createPlatform(125,625, 75, 12, "white" );
+    createPlatform(650, 650, 30, 10, "white");
+    createPlatform(1300,250, 15, 150, "white")
     
     
 
