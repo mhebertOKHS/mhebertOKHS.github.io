@@ -53,14 +53,14 @@ $(function () {
 
 
     // TODO 3 - Create Collectables
-    createCollectable("steve",375, 200);
-    createCollectable("diamond",1025, 150);
-    createCollectable("max",1350, 200, 0);
-    createCollectable("kennedi",1025, 400);
-    createCollectable("grace",300, 350);
-    createCollectable("database", 100, 600);
-    createCollectable("max",650, 600);
-    createCollectable("diamond",1300, 600);
+    createCollectable("warrior", 375, 200);
+    createCollectable("warrior ", 1025, 150);
+    createCollectable("warrior", 1350, 200, 0);
+    createCollectable("warrior", 1025, 400);
+    createCollectable("warrior", 300, 350);
+    createCollectable("warrior", 100, 600);
+    createCollectable("warrior", 650, 600);
+    createCollectable("warrior", 1300, 600);
 
 
 
