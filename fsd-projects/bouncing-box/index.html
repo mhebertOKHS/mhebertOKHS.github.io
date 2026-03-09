@@ -53,11 +53,11 @@
         });
 
         // Every 50 milliseconds, call the update Function (see below)
-        setInterval(update, 50);
+         var interval = setInterval(update, 50);
 
         // Every time the box is clicked, call the handleBoxClick Function (see below)
         box.on("click", handleBoxClick);
-
+        board.on("click", handleMisclick);
         // moves the Box to a new position on the screen along the X-Axis
         function moveBoxTo(newPositionX, newPositionY) {
           box.css("left", newPositionX);
@@ -83,6 +83,8 @@
          var speedY = 10;
          var boardHeight = jQuery(window).height();
          var randNum = Math.random() * 100;
+         var click = 0;
+         var condition = false;
          
 
 
@@ -109,17 +111,7 @@
           }
           if (positionY < 0) {
             speedY *= -1;
-          }
-          
-       
-        
-
-          
-
-
-        
-
-          
+          } 
         }
 
         /**
@@ -139,30 +131,20 @@
           changeBoxText(points);
           
         }
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        function handleMisclick() {
+          click++;
+          if (click > points + 9) {
+            endGame();
+            alert("you lost");
+            location.reload();
+          }
         }
-      
-
-
-
-
-
-        
-
-
-        
-      )();
+        function endGame() {
+          clearInterval(interval);
+          condition = true;
+        }    
+    })();
     </script>
   </body>
 </html>
