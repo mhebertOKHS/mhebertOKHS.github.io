@@ -103,13 +103,14 @@
           if (positionX > boardWidth  ) {
             speed *= -1;
           }
-          if (positionX < 0 ) {
+          else if (positionX < 0 ) {
             speed *= -1;
           }
+          
           if (positionY > boardHeight ) {
             speedY *= -1;
           }
-          if (positionY < 0) {
+          else if (positionY < 0) {
             speedY *= -1;
           } 
         }
