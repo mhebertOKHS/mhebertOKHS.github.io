@@ -20,19 +20,30 @@ var init = function (window) {
         ///////////////////
         
         // TODO 1 : Declare and initialize our variables
-
+        var circle;
+        var circles = [];
 
 
         // TODO 2 : Create a function that draws a circle 
-        
+        function drawCircle() {
+            circle = 
+            draw.randomCircleInArea(canvas, true, true, "#999", 2);
+            physikz.addRandomVelocity(circle, canvas, 5, 5);
+            view.addChild(circle);
+            circles.push(circle);
+        }
 
 
         // TODO 3 : Call the drawCircle() function
+        
+        
 
 
 
         // TODO 7 : Use a loop to create multiple circles
-
+        for (var i = 0; i < 25; i++) {
+            drawCircle();
+        }
 
 
 
@@ -43,18 +54,21 @@ var init = function (window) {
         /* 
         This Function is called 60 times/second, producing 60 frames/second.
         In each frame, for every circle, it should redraw that circle
-        and check to see if it has drifted off the screen.         
+        and check to see if it haws drifted off the screen.         
         */
         function update() {
             // TODO 4 : Update the position of each circle using physikz.updatePosition()
-
+            
             
             // TODO 5 : Call game.checkCirclePosition() on your circles
            
 
             // TODO 8 / TODO 9 : Iterate over the array
-           
-            
+           for (var i = 0; i < circles.length; i++) {
+            physikz.updatePosition(circles[i]);
+            game.checkCirclePosition(circles[i]);
+           }
+
         }
     
         /* 
@@ -70,7 +84,15 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            
+            if (circle.x < 0) {
+                circle.x = canvas.width;
+            }
+            if (circle.y < 0) {
+                circle.y = canvas.height;
+            }
+            if (circle.y > canvas.height) {
+                circle.y = 0
+            }
 
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
@@ -84,7 +106,7 @@ var init = function (window) {
         app.addUpdateable(fps);
         
         game.circle = circle;
-        game.circles = circles;
+        game.circle = circle;
         game.drawCircle = drawCircle;
         game.update = update;
         
